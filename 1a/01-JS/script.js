@@ -52,9 +52,10 @@ premiacoes = Number(prompt("gastos em premiações: "))
 presente = Number(prompt("gastos em presentes: "))
 comissoes = Number(prompt("gastos em comissões: "))
 
+
+
 lucro = bruto - premiacoes - presentes - comissoes
 
-alert("" + lucro)
+alert("lucro: " + lucro)
 
 }
-
