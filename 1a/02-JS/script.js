@@ -1,5 +1,125 @@
 // let nomeUsuario = 'Umberto Doisberto'
 
+//{⭐⭐} Decisão de Compra: Peça ao usuário para inserir o preço de um item
+// e o saldo da sua conta. Em seguida, determine se eles podem comprar o item ou não.
+
+
+function controleTripulacao(){
+
+let numeroMarujos, qntComida
+
+numeroMarujos = Number(prompt("quantidade de marujos: "))
+qntComida = Number(prompt("quantidade de comida: "))
+
+
+if(numeroMarujos >= 10 && qntComida >= 1.5){
+    alert("Provisões suficientes. Rumo ao horizonte!")
+}else{
+    alert("Algo está errado. Posseidom não quer ninguém no mar hoje")
+}
+
+}
+
+
+
+
+
+
+
+//Exercícios do {#0027}.SQ02
+//=======================================================================================================================================
+//12
+function conversorTemperaturas(){
+
+let f, c
+c = Number(prompt("Digite a temperatura em Celsius: "))
+
+f = c * 9/5 + 32
+
+if(f > 68){
+    alert("Super calor!")
+}else if(f < 68){
+    alert("temperatura convertida para Fahrenheit: " + f)
+}else{
+    alert("erro de digitação.")
+}
+
+
+
+
+}
+
+//11
+function verificarVoto(){
+
+let idade
+
+idade = Number(prompt("digite a sua idade: "))
+
+if(idade >= 16){
+    alert("ja esta elegivel.")
+}else if(idade < 16){
+    alert("ainda não esta elegivel.")
+}else{
+    alert("erro de digitação.")
+}
+
+}
+
+//10
+function idadeCachorro(){
+
+    let idade
+
+    idade = Number(prompt("Digite a idade do cachorro: "))
+
+    idade = idade * 7
+
+    alert("a idade do seu cachorro em idade humana é: " + idade)
+}
+
+//9
+function comprasDecisao(){
+    let precoItem
+    let saldo
+
+    precoItem = Number(prompt("preço do item:"))
+    saldo = Number(prompt("saldo da conta:"))
+
+    if(precoItem > saldo){
+        alert("voçê não pode comprar este item.")
+    }else if(precoItem < saldo){
+        alert("Voçê pode comprar este item.")
+    }else if(precoItem = saldo){
+        alert("Voçê pode comprar este item.")
+    }else{
+        alert("erro de digitaçâo.")
+    }
+    
+
+}
+
+//8
+function senha(){
+
+let senha
+
+senha = prompt("digite uma senha: ")
+
+
+
+if(senha.length >= 8 ){
+    alert("senha segura")
+}else{
+    alert("senha insegura")
+}
+
+
+
+
+}
+
+//4
 function diaSemana(){
 
 let numero
@@ -22,13 +142,13 @@ if(numero == 1){
 }else if(numero == 7){
     prompt("Sabado")
 }else{
-    prompt("erro, digite um numero de 1 a 7.😒")
+    prompt("erro, digite um numero de 1 a 7.")
 }
 
 
 }
 
-
+//5
 function numeros(){
   //entendimento  
     // felipe
@@ -53,7 +173,7 @@ function numeros(){
 
 }
 
-
+//1
 function verificarMaioridade(){
     //entendimento
          //o progama deve ler a idade de uma pessoa e informar se e maior de idade ou nao
@@ -69,7 +189,17 @@ function verificarMaioridade(){
         alert("Menor de idade")
     }
 }
+//=======================================================================================================================================
 
+
+
+
+
+
+
+
+//Exercícios do {#0011}
+//=======================================================================================================================================
 
 function calcularLucroGanso(){
     // entendimento
@@ -125,3 +255,4 @@ function calcularPrecoDoPrompt(){
     // saída
     alert("Seu prompt vai consumir " + totalDeTokens + ' tokens')
 }
+//=======================================================================================================================================
