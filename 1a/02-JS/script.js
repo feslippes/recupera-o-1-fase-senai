@@ -1,9 +1,9 @@
 // let nomeUsuario = 'Umberto Doisberto'
 
-//{⭐⭐} Decisão de Compra: Peça ao usuário para inserir o preço de um item
-// e o saldo da sua conta. Em seguida, determine se eles podem comprar o item ou não.
 
+//{#0030} Exercícios com Condições Compostas (if, &&, ||)
 
+//01
 function controleTripulacao(){
 
 let numeroMarujos, qntComida
@@ -19,9 +19,88 @@ if(numeroMarujos >= 10 && qntComida >= 1.5){
 }
 
 }
+//2
+function testeRecrutamento(){
+
+    let saberNadar, idade, temRecomendacao
+
+    saberNadar = confirm("você sabe nada? (ok=sim, cancelar=Não)")
+    idade = prompt("Qual a sua idade? ")
+    temRecomendacao = confirm("tem carta de recomendação? (ok=sim, cancelar=Não)")
+
+    if(saberNadar==true && idade>=16){
+        alert("Aprovado para o navio!")
+    }else if(temRecomendacao==true && idade>=14){
+        alert("Aprovado sob recomendação. Monitorar nas primeiras viagens")
+    }else{
+        alert("Reprovado. Volte quando estiver mais preparado para o mar.")
+    }
+
+}
+//3
+function maquinaFumaca(){
 
 
+    let criancasPequenas, velocidadeVento
 
+   criancasPequenas = confirm("a area perto da maquina esta sem crianças pequenas?")
+
+   velocidadeVento = confirm("A velocidade do vento esta a pelo menos 0,5m/s ?")
+
+if(criancasPequenas==true && velocidadeVento==true){
+    alert("Fumaça liberada. Que comecem os mistérios!")
+}else{
+    alert("Fumaça bloqueada. Aguardar condições ideais.")
+}
+
+
+}
+//4
+function deslocamentoEventos(){
+
+    let estaGripado, tempoViagem
+
+    estaGripado = confirm("você esta gripado? ")
+    tempoViagem = Number(prompt("Quantos minutos a viagem dará?"))
+
+    if(estaGripado==false && tempoViagem<45){
+        alert("Viagem autorizada. Rumo ao show!")
+    }else{
+        alert("Deslocamento inviável. Melhor recusar este evento.")
+    }
+}
+//5
+
+
+//=================================================================================================================
+
+
+//Exercícios {#0027}.sq05
+
+//5.7
+function albergueJuca(){
+
+    let dias
+    let desconto10, desconto15
+    let totalBruto
+    let multa=150
+
+    dias = Number(prompt("quantos dias irá ficar?"))
+
+    
+if(dias <= 5){
+    valorDaDiaria
+}
+    
+
+   
+
+}
+//5.10
+
+//=================================================================================================================
+
+//{#0012} Refatoração de exercícios antigos [se/senao]
 
 
 
@@ -53,7 +132,7 @@ if(f > 68){
 function verificarVoto(){
 
 let idade
-
+ 
 idade = Number(prompt("digite a sua idade: "))
 
 if(idade >= 16){
