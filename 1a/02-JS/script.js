@@ -80,23 +80,46 @@ function deslocamentoEventos(){
 //5.7
 function albergueJuca(){
 
-    let dias
-    let desconto10, desconto15
-    let totalBruto
+    let qtd_dias, valorDaDiaria
+    let totalBruto, descontos10, descontos15, totalPagar
     let multa=150
 
-    dias = Number(prompt("quantos dias irá ficar?"))
-
-    
-if(dias <= 5){
-    valorDaDiaria
+    qtd_dias = Number(prompt("quantos dias irá ficar?"))
+  
+if(qtd_dias <= 5){
+    valorDaDiaria = 100
+}else if(qtd_dias <=10){
+valorDaDiaria =90 
+}else{
+    valorDaDiaria = 80
 }
-    
 
-   
+totalBruto = qtd_dias * valorDaDiaria
+descontos10 = totalBruto * 10/100
+descontos15 = totalBruto * 15/100
+
+totalPagar = totalBruto - (descontos10 = descontos15) + multa
+
+    alert("total bruto: $" + totalBruto.toFixed(2) +
+          "\nDesconto emocional: R$" + descontos10.toFixed(2) +
+          "\nDesconto publico: R$" + descontos15.toFixed(2) +
+          "\nmulta: R$" + multa.toFixed(2) +
+          "\n===========================================" +
+          "\nTotal a pagar: R$" + totalPagar
+         )
 
 }
-//5.10
+//5.
+function feiraJuca(){
+
+    let maca
+
+    maca = Number(prompt("Quantas maçãs você vai comprar? "))
+    valorMaca
+    if(maca )
+}
+
+
 
 //=================================================================================================================
 
@@ -271,9 +294,39 @@ function verificarMaioridade(){
 //=======================================================================================================================================
 
 
+//{#0012} Refatoração de exercícios antigos [se/senao]
 
+//1
+function transportes(){
 
+    let peso, distancia, volume
+    let frete
 
+    peso = Number(prompt("peso: "))
+    distancia = Number(prompt("distancia: "))
+    volume = Number(prompt("volume: "))
+
+    frete=15+(2*peso)+(0.05*distancia)+(10*volume)
+
+    alert("frete: " + frete.toFixed(2))
+}
+//2
+function faturamento(){
+
+    let brutoTotal, metaLucro, total
+    let premiacoes,presentes, comissoes
+
+    brutoTotal + Number(prompt("Valor bruto: "))
+    premiacoes + Number(prompt("Valor gasto em premiações: "))
+    presentes + Number(prompt("Valor gasto em presentes: "))
+    comissoes + Number(prompt("Valor gasto em comissões: "))
+    metaLucro + Number(prompt("Meta de lucro esperada: "))
+
+    total = brutoTotal - (premiacoes + presentes + comissoes)
+
+   alert("total: R$" + total + "\nMeta: R$")
+
+}
 
 
 
