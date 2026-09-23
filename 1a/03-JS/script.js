@@ -149,9 +149,30 @@ resultado.innerHTML = '<p>' + resultados + '</p>'
 }
 function ex9(){
 resultado.innerHTML = 'Parte 1, ex9'
+
+for (let i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log("FizzBuzz"); resultado.innerHTML += '<p>' + "FizzBuzz" + '<p>';
+    } else if (i % 3 === 0) {
+        console.log("Fizz"); resultado.innerHTML +=  '<p>' + "Fizz" + '</p>';
+    } else if (i % 5 === 0) {
+        console.log("Buzz"); resultado.innerHTML += '<p>' + "Buzz" + '</p>';
+    } else {
+        console.log(i); resultado.innerHTML += '<p>' +  i + '</p>';
+    }
+ 
+
+}
+
+
+
 }
 function ex10(){
 resultado.innerHTML = 'Parte 1, ex10'
+
+
+  
+
 }
  
 
@@ -163,12 +184,47 @@ resultado.innerHTML = 'Parte 1, ex10'
 
 function ex11(){
 resultado.innerHTML = 'Parte 2, ex1'
+
+let senha1, senha2
+
+senha1 = prompt("Digite sua senha1: ")
+senha2 = prompt("Digite a senha2 novamente: ")
+
+while(senha2 != senha1){
+  senha2 = prompt( "erro, Digite a senha novamente: ")
+}
+
 }
 function ex22(){
 resultado.innerHTML = 'Parte 2, ex2'
+
+let frutas
+
+frutas = prompt("digite o nome de frutas para adicionar na salada! (adicione uma cereja no final para finalizar a salada!)")
+
+while(frutas != "cereja"){
+    
+    frutas = prompt("qual fruta a acrescentar? ")
+    
+    if(frutas == "cereja"){
+        alert("Salada pronta!!")
+    }
+}
+
 }
 function ex33(){
 resultado.innerHTML = 'Parte 2, ex3'
+
+let dano
+let hpTorre = 100
+dano = Number(prompt("temos uma torre para destruir!! digite um numero para danificar ela!!"))
+
+
+
+// while(hpTorre != 0){
+//    dano = Number(prompt("mais uma vez!! ")) 
+// }
+
 }
 function ex44(){
 resultado.innerHTML = 'Parte 2, ex4'
