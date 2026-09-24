@@ -191,39 +191,48 @@ senha1 = prompt("Digite sua senha1: ")
 senha2 = prompt("Digite a senha2 novamente: ")
 
 while(senha2 != senha1){
-  senha2 = prompt( "erro, Digite a senha novamente: ")
-}
+  senha2 = prompt( "Senha não correspondente. Digite novamente: ")
 
+}
+alert("acesso liberado!")
 }
 function ex22(){
 resultado.innerHTML = 'Parte 2, ex2'
 
 let frutas
+let cntgFruta
 
-frutas = prompt("digite o nome de frutas para adicionar na salada! (adicione uma cereja no final para finalizar a salada!)")
 
 while(frutas != "cereja"){
     
-    frutas = prompt("qual fruta a acrescentar? ")
+    frutas = prompt("qual fruta a acrescentar? ").toLowerCase()
+     cntgFruta++
+ 
+ 
     
-    if(frutas == "cereja"){
-        alert("Salada pronta!!")
-    }
 }
+alert("salada de fruta pronta!!" + "\nquantidade de frutas na salada: " + cntgFruta)
 
 }
 function ex33(){
 resultado.innerHTML = 'Parte 2, ex3'
 
-let dano
-let hpTorre = 100
-dano = Number(prompt("temos uma torre para destruir!! digite um numero para danificar ela!!"))
+let hpCastelo = 100
+let valorDano
+let rodadas = 0
 
 
+while(hpCastelo > 0){
 
-// while(hpTorre != 0){
-//    dano = Number(prompt("mais uma vez!! ")) 
-// }
+    valorDano = Number(prompt("Digite o valor do dano: "))
+    hpCastelo = hpCastelo - valorDano
+    rodadas++
+
+    if(hpCastelo > 0){
+    alert("vida restante do castelo: " + hpCastelo)
+    }
+}
+alert("castelo destruido! " + "\nNumero de rodadas: " + rodadas)
 
 }
 function ex44(){
