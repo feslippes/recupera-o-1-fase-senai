@@ -185,115 +185,148 @@ resultado.innerHTML = 'Parte 1, ex10'
 function ex11(){
 resultado.innerHTML = 'Parte 2, ex1'
 
-let senha1, senha2
+let palavra = prompt("Digite uma palavra:")
 
-senha1 = prompt("Digite sua senha1: ")
-senha2 = prompt("Digite a senha2 novamente: ")
 
-while(senha2 != senha1){
-  senha2 = prompt( "Senha não correspondente. Digite novamente: ")
-
+for(i=1; i<11; i++){
+ 
+resultado.innerHTML += '<p>' + palavra + '</p>'
 }
-alert("acesso liberado!")
+
+
+
+
 }
 function ex22(){
 resultado.innerHTML = 'Parte 2, ex2'
 
-let frutas
-let cntgFruta
+let soma = 0;
 
+let n = Number(prompt("Digite um numero: "))
 
-while(frutas != "cereja"){
-    
-    frutas = prompt("qual fruta a acrescentar? ").toLowerCase()
-     cntgFruta++
- 
- 
-    
+for(let i=2; i<=n; i++){
+    if(i%2 == 0){
+        soma += i
+        console.log(i);
+    }
 }
-alert("salada de fruta pronta!!" + "\nquantidade de frutas na salada: " + cntgFruta)
+
+resultado.innerHTML += '<p>' + soma + '</p>'
 
 }
 function ex33(){
 resultado.innerHTML = 'Parte 2, ex3'
 
-let hpCastelo = 100
-let valorDano
-let rodadas = 0
+let item = 'vazio'
 
+resultado.innerHTML = ''
 
-while(hpCastelo > 0){
-
-    valorDano = Number(prompt("Digite o valor do dano: "))
-    hpCastelo = hpCastelo - valorDano
-    rodadas++
-
-    if(hpCastelo > 0){
-    alert("vida restante do castelo: " + hpCastelo)
+while(item != '0'){
+    item = prompt("Digite um item para a lista: ")
+    if(item != '0'){
+        resultado.innerHTML += `<p>${item}</p>`
     }
 }
-alert("castelo destruido! " + "\nNumero de rodadas: " + rodadas)
 
 }
 function ex44(){
 resultado.innerHTML = 'Parte 2, ex4'
+
+let n = Number(prompt("Digite um número: "));
+
+for (let i = n; i >= 1; i--) {
+    if (i % 2 != 0) {
+        console.log(i);
+    }
+}
+
 }
 function ex55(){
 resultado.innerHTML = 'Parte 2, ex5'
+
+let linha = ""
+
+for (let i = 1; i <= 5; i++) {
+    linha += "*"
+    console.log(linha)
+
+    resultado.innerHTML += '<p>' + linha + '</p>'
+}
 }
 function ex66(){
 resultado.innerHTML = 'Parte 2, ex6'
+
+let numeroSorteado = Math.floor(Math.random() * 100) + 1
+let palpite = 0
+let tentativas = 0
+
+while (palpite !== numeroSorteado) {
+    palpite = Number(prompt("Tente adivinhar um número entre 1 e 100:"))
+    tentativas++
+
+    if (palpite > numeroSorteado) {
+        console.log("Muito alto!")
+    } else if (palpite < numeroSorteado) {
+        console.log("Muito baixo!")
+    } else {
+        console.log("Voce acertou!")
+        console.log("Numero de tentativas: " + tentativas)
+    }
+}
+
 }
 function ex77(){
 resultado.innerHTML = 'Parte 2, ex7'
+
+let largura = Number(prompt("Digite um numero para a largura do quadrado:"))
+let altura = Number(prompt("Digite um numero para a altura do quadrado:"))
+
+for(let i = 1; i<=altura; i++){
+    let linha = ""
+
+    for (let j = 1; j <= largura; j++) {
+        linha += "#"
+    }
+   
+    resultado.innerHTML +=  '<p>' + linha + '</p>'
+}
+
 }   
-function ex88(){
-resultado.innerHTML = 'Parte 2, ex8'
-}
-function ex99(){
-resultado.innerHTML = 'Parte 2, ex9'
-}
-function ex110(){
-resultado.innerHTML = 'Parte 2, ex10'
-}
-
-
-
 
 
 //parte 3
 //=======================================================================================================
 
-function ex111(){
-resultado.innerHTML = 'Parte 3, ex1'
-}
-function ex222(){
-resultado.innerHTML = 'Parte 3, ex2'
-}
-function ex333(){
-resultado.innerHTML = 'Parte 3, ex3'
-}
-function ex444(){
-resultado.innerHTML = 'Parte 3, ex4'
-}
-function ex555(){
-resultado.innerHTML = 'Parte 3, ex5'
-}
-function ex666(){
-resultado.innerHTML = 'Parte 3, ex6'
-}
-function ex777(){
-resultado.innerHTML = 'Parte 3, ex7'
-}   
-function ex888(){
-resultado.innerHTML = 'Parte 3, ex8'
-}
-function ex999(){
-resultado.innerHTML = 'Parte 3, ex9'
-}
-function ex1110(){
-resultado.innerHTML = 'Parte 3, ex10'
-}
+// function ex111(){
+// resultado.innerHTML = 'Parte 3, ex1'
+// }
+// function ex222(){
+// resultado.innerHTML = 'Parte 3, ex2'
+// }
+// function ex333(){
+// resultado.innerHTML = 'Parte 3, ex3'
+// }
+// function ex444(){
+// resultado.innerHTML = 'Parte 3, ex4'
+// }
+// function ex555(){
+// resultado.innerHTML = 'Parte 3, ex5'
+// }
+// function ex666(){
+// resultado.innerHTML = 'Parte 3, ex6'
+// }
+// function ex777(){
+// resultado.innerHTML = 'Parte 3, ex7'
+// }   
+// function ex888(){
+// resultado.innerHTML = 'Parte 3, ex8'
+// }
+// function ex999(){
+// resultado.innerHTML = 'Parte 3, ex9'
+// }
+// function ex1110(){
+// resultado.innerHTML = 'Parte 3, ex10'
+// }
        
    
 
