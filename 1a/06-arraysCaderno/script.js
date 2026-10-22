@@ -1,8 +1,11 @@
+
+//exer 8.5
 function teste1(){
 
     let n =  Math.ceil(Math.random() *  201) - 100
   console.log(n)
 }
+//exer 8.6
 function teste2(){
 
     let n =  Math.ceil(Math.random() *  201) - 100
@@ -13,6 +16,7 @@ function teste2(){
     }
     console.log(n)
 }
+//exer 8.6a
 function teste3(){
 
     let n =  Math.ceil(Math.random() *  201) - 100
@@ -25,6 +29,7 @@ function teste3(){
         console.log(n)
     }
 }
+//exer 8.2
 function teste4(){
 
    
@@ -38,6 +43,7 @@ function teste4(){
         console.log(vetor1)
         console.log(vetor2)
 }
+//exer 8.10
 function teste5(){
 
     let vetor = []
@@ -56,6 +62,7 @@ function teste5(){
     console.log(vetor)
 
 }
+//exer 8.3
 function teste6(){
     let vetor = []
 
@@ -76,6 +83,7 @@ function teste6(){
         alert("Digite somente números inteiros entre 0 e 24!")
     }
 }
+//exer 8.4
 function teste7(){
     let vetor = [];
 
@@ -104,6 +112,7 @@ function teste7(){
         alert("O valor NÃO está presente no vetor!")
     }
 }
+//exer 8.7
 function teste8(){
 
 let pai = []
@@ -125,6 +134,7 @@ console.log(pai)
 console.log(mae)
 console.log(filho)
 }
+//exer 8.1
 function teste9(){
 
         let minima = []
@@ -166,6 +176,7 @@ function teste9(){
     
         console.log("Maior temperatura média do mês: " + maiorMedia + "°C")
 }
+//exer 8.9
 function teste10(){
 
     let vetor = [12, 45, 7, 23, 45, 89, 2, 56, 10, 34]
@@ -187,9 +198,8 @@ function teste10(){
         console.log("Tudo certo! Não existem valores duplicados!")
     }
 
-
-
 }
+//exer 8.8
 function teste11(){
     let vetor1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     let vetor2 = [10, 11, 12, 13, 14, 15, 16, 17, 18]
@@ -213,6 +223,3 @@ function teste11(){
     console.log("Vetor 3:", vetor3)
     console.log("Vetor resultante:", resultado)
 }
-
-  
-  
